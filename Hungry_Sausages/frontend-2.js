@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var currentScrollPos = window.pageYOffset;
 
     if (prevScrollpos > currentScrollPos) {
-      document.querySelector(".header").style.top = "48px";
+      document.querySelector(".header").style.top = "-1px";
     } else {
       document.querySelector(".header").style.top = "-80px";
     }
