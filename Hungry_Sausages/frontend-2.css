@@ -2663,7 +2663,7 @@ h6 {
   }
 }
 
-/* new paste roadmap */
+/* new paste team */
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -3122,7 +3122,6 @@ button:disabled:hover {
 }
 
 .follow__logo {
-  width: 45px;
   height: auto;
 }
 
