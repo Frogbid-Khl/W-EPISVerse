@@ -2624,11 +2624,8 @@ h6 {
 }
 
 .hero .columns .col:last-of-type:not(:only-child) .white-rabbit {
-  position: absolute;
-  max-width: 60%;
-  margin-left: auto;
+  max-width: 90%;
   margin-right: 0;
-  transform: translateY(3rem);
 }
 
 @media (min-width: 991px) {
