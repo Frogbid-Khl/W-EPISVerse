@@ -1719,6 +1719,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -18px;
+  padding: 8px;
 }
 
 .am2-section .columns .col {
