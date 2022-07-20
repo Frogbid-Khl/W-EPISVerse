@@ -2194,7 +2194,7 @@ h6 {
   width: 181px;
   height: auto;
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 @media (min-width: 440px) {
@@ -3105,7 +3105,7 @@ button:disabled:hover {
 
 @media (min-width: 1024px) {
   .follow__logo {
-    width: 180px;
+    width: 120px;
   }
 }
 
