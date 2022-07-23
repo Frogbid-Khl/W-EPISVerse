@@ -221,62 +221,80 @@
 <!-- End New - Launch -->
 
 <!-- New - Perks -->
-<section id="roadmap" class="am2-section perks has-black-background-color has-white-color offset-left">
-    <!--img class="bcc2-image floating-balls__item floating-balls__item--half" src="Episverse/bcc2.gif" alt="" style="transform-origin: 125px 0px; transform: translate(0px, 0px);"-->
-    <center>
-        <div class="wrapper">
-            <h1 class="h1 text-center">Roadmap</h1>
-            <div class="columns" style="flex-direction: column">
-                <div class="">
-                    <div class="fancy-box" data-animation="fade-up" style="transform: translate(0px, 0px); opacity: 1;">
-                        <div class="fancy-box__inner">
-                            <p><strong>Phase-1:</strong><br/> Virtual Trainer Competition Jul - Aug 2022</p>
+    <div id="Road-Map" class="section wf-section">
+        <div class="container roadmap-container">
+            <div class="roadmap-block">
+                <h1 class="h1 text-center">Roadmap</h1>
+            </div>
+            <div data-w-id="5c7d63c2-12e2-dfd6-0243-3c535757e287" class="roadmap-content-block">
+                <div class="roadmap-sticky">
+                    <div class="roadmap-sticky-content">
+                        <div class="number-tracker">
+                            <div class="changing-numbers-block">
+                                <div class="changing-numbers">01</div>
+                                <div class="changing-numbers">02</div>
+                                <div class="changing-numbers">03</div>
+                                <div class="changing-numbers">04</div>
+                            </div>
+                            <div class="number-total total"></div>
+                        </div>
+                        <div class="banana-bar">
+                            <div class="end-points"></div>
+                            <div class="bar">
+                                <div class="banana-scroll">
+                                    <div class="div-block-7"></div>
+
+                                </div>
+                            </div>
+                            <div class="end-points"></div>
+                        </div>
+                        <div class="changing-words-block">
+                            <h3 class="h3-roadmap absolute"><strong>Phase One – 2022Q3<br></strong></h3>
+                            <h3 class="h3-roadmap absolute"><strong>Phase Two – 2022Q4<br></strong></h3>
+                            <h3 class="h3-roadmap absolute"><strong>Phase Three – 2023Q1</strong></h3>
+                            <h3 class="h3-roadmap absolute"><strong>Phase Four – Going Forward</strong>
+                                <strong><br></strong></h3>
                         </div>
                     </div>
                 </div>
-                <div class="">
-                    <div class="fancy-box" data-animation="fade-up" style="transform: translate(0px, 0px); opacity: 1;">
-                        <div class="fancy-box__inner">
-                            <p>
-                                <strong>Phase-2:</strong><br/> ABest Virtual Trainers Award Ceremony Sept 2022
-                            </p>
-                        </div>
+                <div class="rodmap-paragraphs-block">
+                    <div class="roadmap-content _2">
+                        <p class="paragraph">
+                        <ol class="paragraph" style="list-style: none">
+                            <li>Phase-1:</li>
+                            <li>Virtual Trainer Competition Jul - Aug 2022</li>
+                        </ol>
+                        </p>
                     </div>
-                </div>
-                <div class="">
-                    <div class="fancy-box" data-animation="fade-up" style="transform: translate(0px, 0px); opacity: 1;">
-                        <div class="fancy-box__inner">
-                            <p>
-                                <strong>Phase-3:</strong><br/> Launch MAMA in Metaverse Nov 22
-                            </p>
-                        </div>
+
+                    <div class="roadmap-content _2">
+                        <p class="paragraph">
+                        <ol class="paragraph" style="list-style: none">
+                            <li>Phase-2:</li>
+                            <li>ABest Virtual Trainers Award Ceremony Sept 2022</li>
+                        </ol>
+                        </p>
                     </div>
-                </div>
-                <div class="">
-                    <div class="fancy-box" data-animation="fade-up" style="transform: translate(0px, 0px); opacity: 1;">
-                        <div class="fancy-box__inner">
-                            <p>
-                                <strong>Phase-4:</strong><br> FAME Club NFT Gallery Licensing System Jan 23
-                            </p>
-                        </div>
+                    <div class="roadmap-content _3">
+                        <p class="paragraph">
+                        <ol class="paragraph" style="list-style: none">
+                            <li>Phase-3:</li>
+                            <li>Launch MAMA in Metaverse Nov 22</li>
+                        </ol>
+                        </p>
                     </div>
-                </div>
-                <div class="">
-                    <div class="fancy-box" data-animation="fade-up" style="transform: translate(0px, 0px); opacity: 1;">
-                        <div class="fancy-box__inner">
-                            <p>
-                                <strong>Phase-5:</strong><br> Plus Additional Benefits Generated: Anything can happen
-                                amongst our Episian elites
-                            </p>
-                        </div>
+                    <div class="roadmap-content _3">
+                        <p class="paragraph">
+                        <ol class="paragraph" style="list-style: none">
+                            <li>Phase-4:</li>
+                            <li>FAME Club NFT Gallery Licensing System Jan 23</li>
+                        </ol>
+                        </p>
                     </div>
                 </div>
             </div>
-            <a href="#" target="_blank" class="am2-button am2-button--green">VERIFIED SMART
-                CONTRACT</a>
         </div>
-    </center>
-</section>
+    </div>
 <!-- End New - Perks -->
 
 
@@ -804,6 +822,111 @@
 <script src="Episverse/gsap.min.js"></script>
 <script src="Episverse/scrolltrigger.min.js"></script>
 <script src="Episverse/frontend-2.js"></script>
+<script>
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
+    /* Countdown Timer */
+    (function () {
+        var deadline = '2022/04/04 00:00';
+
+        function pad(num, size) {
+            var s = "0" + num;
+            return s.substr(s.length - size);
+        }
+
+        // fixes "Date.parse(date)" on safari
+        function parseDate(date) {
+            const parsed = Date.parse(date);
+            if (!isNaN(parsed)) return parsed
+            return Date.parse(date.replace(/-/g, '/').replace(/[a-z]+/gi, ' '));
+        }
+
+        function getTimeRemaining(endtime) {
+            let total = parseDate(endtime) - Date.parse(new Date())
+            let seconds = Math.floor((total / 1000) % 60)
+            let minutes = Math.floor((total / 1000 / 60) % 60)
+            let hours = Math.floor((total / (1000 * 60 * 60)) % 24)
+            let days = Math.floor(total / (1000 * 60 * 60 * 24))
+            return {total, days, hours, minutes, seconds};
+        }
+
+        function clock(id, endtime) {
+            let days = document.getElementById(id + '-days')
+            let hours = document.getElementById(id + '-hours')
+            let minutes = document.getElementById(id + '-minutes')
+            let seconds = document.getElementById(id + '-seconds')
+            var timeinterval = setInterval(function () {
+                var time = getTimeRemaining(endtime);
+                if (time.total <= 0) {
+                    clearInterval(timeinterval);
+                } else {
+                    days.innerHTML = pad(time.days, 2);
+                    hours.innerHTML = pad(time.hours, 2);
+                    minutes.innerHTML = pad(time.minutes, 2);
+                    seconds.innerHTML = pad(time.seconds, 2);
+                }
+            }, 1000);
+        }
+
+        clock('js-clock', deadline);
+    })();
+
+    //GSAP Scroll Trigger
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+        markers: false
+    });
+    // Number Change
+    $('.changing-numbers').eq(0).addClass('is--active');
+    // Run a function
+    $(".roadmap-content").each(function (index) {
+        let triggerElement = $(this);
+        let myIndex = $(this).index();
+        let targetElement = $(".changing-numbers").eq(myIndex);
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: triggerElement,
+                // trigger element - viewport
+                start: "50% bottom",
+                end: "50% top",
+                onEnter: () => {
+                    $(".changing-numbers").removeClass("is--active");
+                    targetElement.addClass("is--active");
+                },
+                onEnterBack: () => {
+                    $(".changing-numbers").removeClass("is--active");
+                    targetElement.addClass("is--active");
+                }
+            }
+        });
+    });
+    // Title Change
+    $('.h3-roadmap.absolute').eq(0).addClass('is--actived');
+    // Run a function
+    $(".roadmap-content").each(function (index) {
+        let triggerElement = $(this);
+        let myIndex = $(this).index();
+        let targetElement = $(".h3-roadmap.absolute").eq(myIndex);
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: triggerElement,
+                // trigger element - viewport
+                start: "50% bottom",
+                end: "50% top",
+                onEnter: () => {
+                    $(".h3-roadmap.absolute").removeClass("is--actived");
+                    targetElement.addClass("is--actived");
+                },
+                onEnterBack: () => {
+                    $(".h3-roadmap.absolute").removeClass("is--actived");
+                    targetElement.addClass("is--actived");
+                }
+            }
+        });
+    });
+</script>
 
 <div class="ub-emb-container">
     <div></div>
